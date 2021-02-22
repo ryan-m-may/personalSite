@@ -8,8 +8,6 @@ const navItems = document.querySelectorAll('.nav-item');
 // Set initial state of menu to hidden
 let showMenu = false;
 
-console.log(menuBtn);
-
 const toggleMenu = () => {
   if (!showMenu) {
     menuBtn.classList.add('close');

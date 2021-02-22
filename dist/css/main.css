@@ -22,6 +22,15 @@
       transform: rotate(-45deg) translate(2px, -2px);
       background: #8b451a; }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+
 * {
   box-sizing: border-box; }
 

@@ -1,5 +1,5 @@
 // Select elements from the DOM
-const menuBtn = document.querySelector('.btn-menu');
+const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
@@ -8,7 +8,7 @@ const navItems = document.querySelectorAll('.nav-item');
 // Set initial state of menu to hidden
 let showMenu = false;
 
-menuBtn.addEventListener('click', toggleMenu);
+console.log(menuBtn);
 
 const toggleMenu = () => {
   if (!showMenu) {
@@ -29,3 +29,5 @@ const toggleMenu = () => {
     showMenu = false;
   }
 };
+
+menuBtn.addEventListener('click', toggleMenu);

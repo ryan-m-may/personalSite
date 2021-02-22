@@ -62,18 +62,33 @@
     overflow: hidden;
   }
 
+  // Navigation side of menu popup
   &-nav {
     margin: 0;
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
 
-    // animation for nav to pop into page when menu button is clicked
+    // Handle animation for nav to slide into page when menu button is clicked
+    // transform sets the menu to slide in from the right side
     transform: translate3d(100%, 0, 0);
     @include fastOut;
 
     &.show {
-      // Slide in from top
+      // Slide in
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  // Branding side of menu popup
+  &-branding {
+    margin: 0;
+    padding: 0;
+    background: $primary-color;
+
+    transform: translate3d(-100%, 0, 0);
+    @include fastOut;
+
+    &.show {
       transform: translate3d(0, 0, 0);
     }
   }
